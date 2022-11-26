@@ -1,0 +1,224 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main {
+  background-color: white;
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      to right,
+      rgb(111, 179, 219) 2px,
+      transparent 7px
+    ),
+    linear-gradient(to bottom, rgb(111, 179, 219) 2px, transparent 7px);
+}
+
+.sticky {
+  position: absolute;
+  margin: 100px 0px 0px 80px;
+  width: 400px;
+  height: 450px;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 235, 255, 1) 0%,
+    rgba(187, 235, 255, 1) 15%,
+    rgba(170, 220, 241, 1) 75%,
+    rgba(195, 229, 244, 1) 100%
+  );
+  z-index: -5;
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sticky1 {
+  position: absolute;
+  margin: 150px 0px 0px 1400px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgb(201, 255, 187) 0%,
+    rgb(201, 255, 187, 1) 15%,
+    rgb(176, 241, 170) 75%,
+    rgb(195, 244, 199) 100%
+  );
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sticky2 {
+  position: absolute;
+  margin: 500px 0px 0px 500px;
+  width: 800px;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgb(253, 187, 255) 0%,
+    rgb(255, 187, 255) 15%,
+    rgb(233, 170, 241) 75%,
+    rgb(240, 195, 244) 100%
+  );
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sticky3 {
+  position: absolute;
+  left: 1450px;
+  top: 600px;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 228, 187) 0%,
+    rgb(255, 250, 187) 15%,
+    rgb(241, 234, 170) 75%,
+    rgb(244, 241, 195) 100%
+  );
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.up {
+  top: 25%;
+}
+
+#holder {
+  margin: 10%;
+  left: 0;
+  height: auto;
+  width: 20%;
+}
+
+.up1 {
+  margin: 2%;
+  font-size: 20pt;
+}
+
+.left {
+  margin: auto;
+}
+
+#groups {
+  height: 6%;
+  width: 20%;
+  font-size: 20pt;
+  margin: 2%;
+}
+
+.up2 {
+  margin: 2%;
+  font-size: 20pt;
+}
+
+.up3 {
+  top: 35%;
+}
+
+#in {
+  height: 6%;
+  width: 20%;
+  font-size: 20pt;
+  margin: 2%;
+}
+
+.pt {
+  text-align: center;
+  font-size: 35px;
+}
+
+.par {
+  text-align: center;
+  font-size: 35px;
+}
+
+.inp {
+  position: absolute;
+  font-size: 35px;
+  left: 0px;
+}
+
+.st1panel {
+  position: relative;
+  height: 60px;
+}
+
+.input {
+  height: 30px;
+  width: 90px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step {
+  font-size: 35px;
+  text-align: center;
+  margin: 50px 50px 20px 20px;
+}
+.step1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 50px;
+}
+.step2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 50px;
+}
+.step3 {
+  font-size: 35px;
+  text-align: center;
+  margin: 50px;
+}
+
+.pttitle {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-align: center;
+}
+
+.st3t {
+  text-align: center;
+  font-size: 32px;
+  margin: 5px;
+}
+
+.font25 {
+  font-size: 25px;
+}
+
+.prev {
+  font-size: 35px;
+  text-align: center;
+  margin: 25px;
+}
+
+#sticky {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
