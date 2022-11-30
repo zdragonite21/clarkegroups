@@ -2,7 +2,7 @@
 <html>
   <head>
     <!-- p5.js library https://p5js.org/ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script> -->
 
     <title>Clarke Groups</title>
     <link rel="stylesheet" href="styles/style.css" />
@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js" integrity="sha512-on+Vjx6pkQ27deEPRDWBzaT7qKOG/tjLYq1Zm+1sL9/HL7jkVXOwEbZueZJFpZTQdguMIAp5D8Ewr9DLrvkmww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js" integrity="sha512-on+Vjx6pkQ27deEPRDWBzaT7qKOG/tjLYq1Zm+1sL9/HL7jkVXOwEbZueZJFpZTQdguMIAp5D8Ewr9DLrvkmww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- jquery.js library https://jquery.com/ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- found from flaticon.com-->
@@ -24,18 +24,33 @@
   </head>
 
   <body class="main">
-    <div id="holder">
-      <div>
-        <b class="up1 left">number of people in the class</b>
-        <input id="in" class="up left"></input>
+    <div class="container" style="display: flex; height: 100%;">
+      <div style="width: 50%; background: green;">
+        <div class="center">
+          <textarea cols="60" rows="10" id="names"></textarea>
+        </div>
+        <div class="center">
+          <b class="up2">number of groups</b>
+        </div>
+        <div class = "center" style="height: 20px"></div>
+        <div class="center">
+          <input id="groups"></input>
+        </div>
+        <div class = "center" style="height: 40px"></div>
+        <div class="center">
+          <button id="gen">submit</button>
+        </div>
       </div>
-      <div>
+      <div  style="flex-grow: 1; background: rgb(160, 160, 255);">
+        <div class = "center" style="height: 10%;"></div>
+        <div style="text-align: center;">
+          <ol id="list" style="font-size: 25px; display: inline-block; text-align: left;">
+            <li>hi</li>
+          </ol>
+        </div>
         
-        <b class="up2 left">number of groups</b>
-        <input id="groups" class="up3 left"></input>
       </div>
-    </div>
     <script src="scripts/js/jQuery.js"></script>
-    <script class="center" src="scripts/js/sketch.js"></script>
+    <!-- <script class="center" src="scripts/js/sketch.js"></script> -->
   </body>
 </html>
