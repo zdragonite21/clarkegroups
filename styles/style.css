@@ -233,7 +233,26 @@ li {
   top: 20%;
 }
 
+.corner {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
 #gen {
   width: 100px;
   height: 100px;
+}
+
+#copy {
+  width: 50px;
+  height: 50px;
+}
+
+#list {
+  z-index: 100;
+  -webkit-user-select: all;  /* Chrome 49+ */
+  -moz-user-select: all;     /* Firefox 43+ */
+  -ms-user-select: all;      /* No support yet */
+  user-select: all;          /* Likely future */   
 }

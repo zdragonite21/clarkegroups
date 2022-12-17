@@ -1,4 +1,5 @@
 var GROUPS = 0
+var copytext = "";
 
 $("#groups").on("propertychange input", function (e) {
   if (isNaN(this.value) || this.value == "") {
@@ -8,11 +9,14 @@ $("#groups").on("propertychange input", function (e) {
       $(this).val($(this).val().substr(0, 2))
     }
     GROUPS = parseInt(this.value)
-    main()
+    // main()
   }
 })
 
 $("#gen").on("click", function (e) {
+  if (GROUPS == 0) {
+    return;
+  }
   $("#list").empty()
   let people = []
   for (var i = 0; i < GROUPS; i++) {
@@ -30,9 +34,13 @@ $("#gen").on("click", function (e) {
     y++
     x = (x + 1) % GROUPS
   }
+  var txt = "";
   for (let i = 0; i < people.length; i++) {
     $("#list").append("<li>" + people[i].join(", ") + "</li>")
+    txt += people[i].join(", ") + "\n";
   }
+  copytext = txt;
+  console.log(copytext);
 })
 
 function shuff(array) {
@@ -45,3 +53,7 @@ $(document).keypress(function (event) {
     $("#gen").click()
   }
 })
+
+function copyContent() {
+  navigator.clipboard.writeText(copytext);
+}
